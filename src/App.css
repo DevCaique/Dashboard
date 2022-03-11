@@ -1,0 +1,70 @@
+/* ============================== Google Fonts ============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+/* ============================== CSS Variables ============================== */
+
+:root{
+
+    /* Colors */
+    --clr-primary: hsl(246, 80%, 60%);
+
+    --clr-primary-work: hsl(15, 100%, 70%);
+    --clr-primary-play: hsl(195, 74%, 62%);
+    --clr-primary-study: hsl(348, 100%, 68%);
+    --clr-primary-exercise: hsl(145, 58%, 55%);
+    --clr-primary-social: hsl(264, 64%, 52%);
+    --clr-primary-selfcare: hsl(43, 84%, 65%);
+
+    --clr-neutral-blue-900: hsl(226, 43%, 10%);
+    --clr-neutral-blue-700: hsl(235, 46%, 20%);
+    --clr-neutral-blue-500: hsl(235, 45%, 61%);
+    --clr-neutral-blue-400: hsl(236, 100%, 87%);
+
+
+    /* Typography */
+    --fz-normal: 1.125rem;
+
+    --fw-medium: 500;
+    --fw-normal: 400;
+    --fw-thin: 300;
+
+    --ff-body: 'Rubik', sans-serif;
+
+}
+
+
+/* ============================== HTML Reseting ============================== */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    font-family: var(--ff-body);
+    font-size: var(--fz-normal);
+    background-color: var(--clr-neutral-blue-900);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4{
+    line-height: 1;
+}
+
+/* ============================== CSS Reusable Classes ============================== */
+
+.container{
+    width: min(70.5rem, 90%);
+    margin-inline: auto;
+}

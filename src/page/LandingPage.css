@@ -1,0 +1,224 @@
+.content{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container{
+    width: 90vw !important;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-container{
+        margin-block: 6rem;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .content-container{
+        height: 500px;
+    }
+
+}
+
+/* ==================== Report Container ==================== */
+
+.report-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-neutral-blue-700);
+    padding: 1.5em;
+    border-radius: 1em;
+    grid-row: span 2;
+}
+
+/* ========== Name Container ========== */
+
+.name-container{
+    flex-basis: 80%;
+    margin-bottom: 4em;
+    background-color: var(--clr-primary);
+    margin: -1.5em -1.5em 1.5em -1.5em;
+    padding: 1.5em;
+    padding-bottom: 2em;
+    border-radius: 1em;
+}
+
+.name-img-container{
+    width: 80px;
+    margin-bottom: 1.5em;
+}
+
+.name-img{
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.name-name{
+    font-weight: var(--fw-thin);
+    font-size: 40px;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.name-description-report{
+    color: var(--clr-neutral-blue-400);
+}
+
+@media screen and (max-width: 768px) {
+
+    .name-container{
+        display: flex;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
+    .name-img-container{
+        width: 60px;
+        margin-right: 1.5em;
+        margin-bottom: 0;
+    }
+    
+    .name-name{
+        font-size: 24px;
+    }
+
+}
+
+/* ========== Period Container ========== */
+
+.period-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.period-item{
+    color: var(--clr-neutral-blue-500);
+    cursor: pointer;
+    width: max-content;
+}
+
+.period-item:hover{
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+
+    .period-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+/* ==================== Card Container ==================== */
+
+/* ========== Card Item ========== */
+
+.card-item{
+    border-radius: 1em;
+    display: grid;
+    align-items: flex-end;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.card-item:nth-of-type(2){
+    background-color: var(--clr-primary-work);
+    background-image: url(../assets/icon-work.svg);
+}
+
+.card-item:nth-of-type(3){
+    background-color: var(--clr-primary-play);
+    background-image: url(../assets/icon-play.svg);
+}
+
+.card-item:nth-of-type(4){
+    background-color: var(--clr-primary-study);
+    background-image: url(../assets/icon-study.svg);
+}
+
+.card-item:nth-of-type(5){
+    background-color: var(--clr-primary-exercise);
+    background-image: url(../assets/icon-exercise.svg);
+}
+
+.card-item:nth-of-type(6){
+    background-color: var(--clr-primary-social);
+    background-image: url(../assets/icon-social.svg);
+}
+
+.card-item:nth-of-type(7){
+    background-color: var(--clr-primary-selfcare);
+    background-image: url(../assets/icon-self-care.svg);
+}
+
+.card-item-container{
+    height: 80%;
+    background-color: var(--clr-neutral-blue-700);
+    padding: 2em;
+    padding-bottom: 3em;
+    border-radius: 1em;
+    color: #FFFFFF;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.dots{
+    display: flex;
+}
+
+.dots > * {
+    height: 3px;
+    width: 3px;
+    font-weight: bolder;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.dots > *:not(:first-of-type){
+    margin-left: 2.5px;
+}
+
+.card-hours{
+    font-weight: var(--fw-thin);
+}
+
+.total-hours{
+    font-size: 40px;
+}
+
+.last-week-hours{
+    font-size: 16px;
+    color: var(--clr-neutral-blue-400);
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-header{
+        margin-bottom: 0;
+    }
+
+    .card-hours{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
