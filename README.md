@@ -4,9 +4,12 @@
 Site feito como desafio da plataforma: <br /><br />
 [![Blog](https://img.shields.io/website?label=frontendmentor.io&style=for-the-badge&url=https://frontendmentor.io)](https://www.frontendmentor.io/challenges)
 
+<br />
 
-<br />
-<br />
+### Preview:
+
+![image](https://user-images.githubusercontent.com/101295856/158066307-b450585f-4d78-4bc7-8a98-ba7215e0ae6e.png)
+
 
 ### Pré-requisitos
 <br />
